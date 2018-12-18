@@ -32,8 +32,6 @@ namespace LoginTest.Controllers
 
         public JsonResult GetData()
         {
-            var serializer = new JavaScriptSerializer();
-            serializer.MaxJsonLength = Int32.MaxValue;
             iSAMS Data = new iSAMS();
             return Json(Data.getData(true),JsonRequestBehavior.AllowGet);
         }

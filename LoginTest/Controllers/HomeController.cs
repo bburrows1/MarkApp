@@ -23,9 +23,9 @@ namespace LoginTest.Controllers
             return View();
         }
 
-        public ActionResult Contact()
+        public ActionResult Marks()
         {
-            ViewBag.Message = "Your contact page.";
+            ViewBag.Message = "Marks";
 
             return View();
         }
